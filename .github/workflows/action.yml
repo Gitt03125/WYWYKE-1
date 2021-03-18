@@ -1,6 +1,9 @@
 name: Lint
 
-on: [pull_request]
+on:
+  push:
+    branches:
+    - main
 
 jobs:
   markdown-link-check:
@@ -21,9 +24,9 @@ jobs:
         with:
           node-version: ${{ matrix.node_version }}
           architecture: ${{ matrix.architecture }}
-      - name: Install
+      - name: Install Dependencies
         run: npm install -g markdown-link-check
-      - name: Run
+      - name: Run Markdown Link Check
         run: git ls-files . -m | xargs markdown-link-check -q -v  # modified files only, quiet mode, verbose mode
   markdownlint:
     name: 🍇 Markdown
