@@ -8,4 +8,4 @@
 * [Mathvn](https://www.mathvn.com) - Toán Học Việt Nam
 * [Sách học](https://sachhoc.com) - Tải Sách học miễn phí
 * [Toán Math](https://toanmath.com) - Tải tài liệu và đề thi môn Toán miễn phí
-* [Zuni](http://zuni.vn) - Tri Thức Cộng Đồng
+* [Zuni](http://zuni.vn) - Tri Thức Cộng đồng
