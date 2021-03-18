@@ -7,29 +7,14 @@ on:
 
 jobs:
   markdown-link-check:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os:
-          - macos-latest
-        node_version:
-          - 14
-        architecture:
-          - x64
-    name: Check Markdown links Node ${{ matrix.node_version }} - ${{ matrix.architecture }} on ${{ matrix.os }}
+    name: Markdown Lint Check
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup node
-        uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node_version }}
-          architecture: ${{ matrix.architecture }}
-      - name: Install Dependencies
-        run: npm install -g markdown-link-check
-      - name: Run Markdown Link Check
-        run: git ls-files . -m | xargs markdown-link-check -q -v  # modified files only, quiet mode, verbose mode
+    - uses: actions/checkout@v2
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+    
   markdownlint:
-    name: 🍇 Markdown
+    name: Markdown Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
