@@ -1,6 +1,6 @@
 # Awesome education sites in Viet Nam
 
-[![Lint](https://github.com/SkoolPlus/awesome-edusites/actions/workflows/action.yml/badge.svg)](https://github.com/SkoolPlus/awesome-edusites/actions/workflows/action.yml)
+[![Lint](https://github.com/SkoolPlus/awesome-edusites/actions/workflows/lint.yml/badge.svg)](https://github.com/SkoolPlus/awesome-edusites/actions/workflows/lint.yml)
 
 * [Cửu duong thần công](https://cuuduongthancong.com) - Cửu dương thần công
 * [Diễn Đàn Toán Học](https://diendantoanhoc.net) - Trao đổi thông tin toán học
