@@ -4,7 +4,7 @@ on: push
 
 jobs:
   markdown-link-check:
-    name: Markdown Lint Check
+    name: Markdown Link Check
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
